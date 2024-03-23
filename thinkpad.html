@@ -7,15 +7,18 @@
     <link rel="stylesheet" href="https://kristopolous.github.io/BOOTSTRA.386/v2.3.1/assets/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <div id="sidebar-placeholder"></div>
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      fetch('sidebar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('sidebar-placeholder').innerHTML = data;
-        });
-    });
-    </script>
+    <div class="sidebar">
+        <ul class="nav nav-list">
+            <li class="nav-header">Navigation</li>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="active"><a href="projects.html">Projects</a></li>
+            <li><a href="thinkpad.html" style="font-style: italic; font-size: 16px">- ThinkPad Refurbish</a></li>
+            <li><a href="projects.html" style="font-style: italic; font-size: 16px">- Raspi Ad-Blocker</a></li>
+            <li><a href="projects.html" style="font-style: italic; font-size: 16px">- Personal Homepage</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
     
 </head>
 <body>
