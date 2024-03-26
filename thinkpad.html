@@ -1,48 +1,701 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - AM</title>
-    <link rel="stylesheet" href="https://kristopolous.github.io/BOOTSTRA.386/v2.3.1/assets/css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <div id="sidebar-placeholder"></div>
-    <div class="sidebar">
-        <ul class="nav nav-list">
-            <li class="nav-header">Navigation</li>
-            <li><a href="main.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="active"><a href="projects.html">Projects</a></li>
-            <li><a href="thinkpad.html" style="font-style: italic; font-size: 16px">- ThinkPad Refurbish</a></li>
-            <li><a href="projects.html" style="font-style: italic; font-size: 16px">- Raspi Ad-Blocker</a></li>
-            <li><a href="projects.html" style="font-style: italic; font-size: 16px">- Personal Homepage</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-    
-</head>
-<body>
-    <div class="content">
-        <div class="hero-unit">
-            <h1>Hello World!</h1>
-            <p>My name is Agron</p> <!-- Fill in your name -->
-        </div>
-     
-        
-        
-               
-        <footer>
-            <div class="btn-group">
-                <a class="btn" href="https://github.com/GoniMcColly" target="_blank">GitHub</a>
-                <a class="btn" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-                <a class="btn" href="mailto:agron@makol.li" target="_blank">Mail: agron@makol.li</a>
-            </div>
-        </footer>
-    </div>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>ThinkPad x220 </title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
 
-    <!-- Bootstrap JS and its dependencies for Bootstrap components to work properly -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://kristopolous.github.io/BOOTSTRA.386/v2.3.1/assets/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><a href="projects.html" style="font-size: 20px; font-weight: bold;">Zurück zu Projekte</a><article id="89781bc9-a52c-40d8-9aca-82e9ad9cdb76" class="page sans"><header><img class="page-cover-image" src="https://helios-i.mashable.com/imagery/articles/058cliFIVNTvJcTRoIJj1dz/images-1.fill.size_2000x1347.v1611692469.png" style="object-position:center 47.49%"/><h1 class="page-title">ThinkPad x220 </h1><p class="page-description"></p></header><div class="page-body"><p id="4654f81b-c8b5-40ca-b375-90c1b3a69f4d" class="">Ein kleines Projekt, das ich schon seit einiger Zeit im Auge habe, ist das ThinkPad X220. Ich bin fasziniert von seinem Vintage-Design und habe beschlossen, es als meinen täglichen Begleiter zu nutzen. Nebenbei möchte ich diese Gelegenheit nutzen, um mich intensiver mit der Hardware auseinanderzusetzen und mein Wissen über ROM-Flashes sowie BIOS/UEFI-Systeme zu vertiefen.</p><p id="36aea91b-97ee-42ad-8815-81cebb25da25" class="">Mal sehen, wohin mich die Reise der Hardware- und Software-Modifikation führen wird. Ich bin gespannt darauf, welche Entdeckungen ich auf dem Weg machen werde und welche neuen Fähigkeiten ich durch diese Erfahrung erwerben werde. Es fühlt sich an wie ein aufregendes Abenteuer, bei dem ich mein ThinkPad X220 weiterentwickeln und gleichzeitig mein Verständnis für Technologie vertiefen kann.</p><p id="e9c09a63-b911-4c51-ba2a-a84e0a6f2561" class="">Ein grosses Dankeschön an die Website <a href="https://x220.mcdonnelltech.com/resources/">https://x220.mcdonnelltech.com/resources/</a> für die Bereitstellung einer so umfassenden Übersicht zu allem Wissenswerten über das X220. Diese Ressource hat mir viel Zeit erspart, die ich sonst mit Suchen im Internet verbracht hätte.</p><p id="c0c11703-4800-48d9-bc32-666af652d543" class="">
+</p><div id="e833e151-efe9-4167-a4a0-460a281302a9" class="column-list"><div id="301fe37b-23c8-4438-bd3d-89bdd664c514" style="width:50%" class="column"><figure id="c4e2c40b-896c-4fbc-8dd2-d689a886e7fe" class="image" style="text-align:left"><a href="ThinkPad%20x220%2089781bc9a52c40d89aca82e9ad9cdb76/WhatsApp_Image_2024-03-26_at_3.15.25_PM_(3).jpeg"><img style="width:336px" src="ThinkPad%20x220%2089781bc9a52c40d89aca82e9ad9cdb76/WhatsApp_Image_2024-03-26_at_3.15.25_PM_(3).jpeg"/></a></figure></div><div id="06ca0663-af6b-4311-ab86-cbe0e6c37409" style="width:50%" class="column"><figure id="99aebd98-a30d-45c5-8562-b46016a92a06" class="image"><a href="ThinkPad%20x220%2089781bc9a52c40d89aca82e9ad9cdb76/WhatsApp_Image_2024-03-26_at_3.15.25_PM_(2).jpeg"><img style="width:576px" src="ThinkPad%20x220%2089781bc9a52c40d89aca82e9ad9cdb76/WhatsApp_Image_2024-03-26_at_3.15.25_PM_(2).jpeg"/></a></figure></div></div><p id="fa5bc61c-3813-489c-812e-1fa6b9407401" class="">
+</p><div id="7df66d6f-2bde-4ca6-a040-75fb5d42fadb" class="column-list"><div id="866d419b-6519-4a67-835a-e8af261ada2f" style="width:162.5%" class="column"><p id="78859230-f121-4280-858e-793d67b1e9dd" class="">Todo</p><ul id="a67806ab-202b-4191-9908-fdaff3a25aa5" class="to-do-list"><li><div class="checkbox checkbox-on"></div> <span class="to-do-children-checked">Linux install</span><div class="indented"></div></li></ul><ul id="0cd0da4f-5f13-4192-a571-c1f11b6c1ce6" class="to-do-list"><li><div class="checkbox checkbox-on"></div> <span class="to-do-children-checked">Hardware-Upgrade</span><div class="indented"></div></li></ul><ul id="90fd0e20-31e7-4285-810a-0eb543d409fe" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Coreboot durch ROM Flash installieren</span><div class="indented"></div></li></ul><ul id="68dd10b2-323c-46ce-8d83-89fb8bf09ff4" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">HD-Display Upgrade</span><div class="indented"></div></li></ul><p id="07f136fb-2009-49fe-b0f0-2844b22446cb" class="">
+</p></div><div id="cec3444c-b630-4aff-9ec7-12af4d575cf2" style="width:37.49999999999999%" class="column"><p id="af196aaf-0a31-4f8a-8e8c-0fcb1cf9b416" class="">
+</p></div></div><p id="9ac0c827-bbb6-4dec-8694-18f39ce4e11a" class="">
+</p><h2 id="836fba07-b7a5-4441-82e8-761f97bafe44" class="">1. Linux install</h2><p id="0a3b527c-12ae-44b1-8d9a-e9186efabacf" class="">First things first - lets remove Windows and install Linux! :D </p><p id="ccbb68db-1a79-495e-9c1b-58c0bb324890" class="">Beim aufbooten sah es schon etwas anders aus als sonst, aber ich habe es einfach auf den “alten” Laptop geschoben. Das hat sich noch als Fehler entpuppt.</p><div id="ea033ca5-6e0e-4ff0-a8b0-d2a746066c8d" class="column-list"><div id="7c83f2b2-2ced-44f5-a3af-737298f69d95" style="width:50%" class="column"><figure id="b356c94b-01d2-44d2-96fa-ba183a3faa5b" class="image"><a href="ThinkPad%20x220%2089781bc9a52c40d89aca82e9ad9cdb76/Untitled.webp"><img style="width:624px" src="ThinkPad%20x220%2089781bc9a52c40d89aca82e9ad9cdb76/Untitled.webp"/></a><figcaption>Debian 12 Installer BIOS mode</figcaption></figure></div><div id="685a0953-ed64-4649-9f4b-9e27938ee57c" style="width:50%" class="column"><figure id="d8db1c33-bea2-4df3-b826-0aac1face497" class="image"><a href="ThinkPad%20x220%2089781bc9a52c40d89aca82e9ad9cdb76/Untitled.png"><img style="width:624px" src="ThinkPad%20x220%2089781bc9a52c40d89aca82e9ad9cdb76/Untitled.png"/></a><figcaption>Debian 12 Installer UEFI mode</figcaption></figure></div></div><p id="305df501-18fb-4b17-8665-5196be99110e" class="">Beim Weitermachen mit der Installation und beim Partitionieren der SSD fiel mir etwas auf, was ich noch nicht kannte: Die Unterscheidung zwischen primären und logischen Partitionen. Nach einer kurzen Recherche fand ich heraus, dass dies auf das MBR-Partitionsschema zurückgeht, eine Methode, die vor der Entwicklung des GPT-Partitionierungsstandards genutzt wurde. <br/>Das war ein interessanter Lernmoment für mich.<br/></p><p id="e1e8fab7-f9b1-462a-9093-410d43268ffa" class="">Daraufhin entschied ich, die Installation abzubrechen und einen Blick ins BIOS zu werfen. Dort stellte ich fest, dass der UEFI/Legacy-Modus auf “Both” und &quot;Legacy first&quot; eingestellt war, was erklärt, warum der Installer im BIOS-Modus lief. Nachdem ich die Einstellungen im BIOS angepasst hatte, um UEFI zu priorisieren, startete ich die Installation erneut.</p><div id="56f91c75-5cce-46d3-b41f-398d6c6befbb" class="column-list"><div id="a876ac2e-42b3-414a-b302-add7af970d30" style="width:50%" class="column"><figure id="8466958f-f39b-48b5-a3b0-986cec91dcbb" class="image"><a href="ThinkPad%20x220%2089781bc9a52c40d89aca82e9ad9cdb76/Untitled%201.png"><img style="width:720px" src="ThinkPad%20x220%2089781bc9a52c40d89aca82e9ad9cdb76/Untitled%201.png"/></a><figcaption>Partition mit MBR-Schema</figcaption></figure></div><div id="4da7cc32-ebd5-43d1-823e-ac0a26f6375f" style="width:50%" class="column"><figure id="01de68ef-961c-4025-b755-cd727ad35a62" class="image"><a href="ThinkPad%20x220%2089781bc9a52c40d89aca82e9ad9cdb76/Untitled%202.png"><img style="width:720px" src="ThinkPad%20x220%2089781bc9a52c40d89aca82e9ad9cdb76/Untitled%202.png"/></a><figcaption>Partition mit GPT-Schema</figcaption></figure></div></div><p id="b7faa232-c23b-4216-aa6e-1c2aff2ccb53" class="">
+</p><p id="1e53bbab-114c-4096-875a-1278e5a43764" class="">Installer startet diesmal im UEFI-Mode, ich fahre fort wie gewohnt und lande bei der Partitionierung, dieses mal sieht alles wie gewohnt aus.</p><p id="4f4a110c-8e1c-4153-9208-7e86e660aa43" class="">Partitionen erstellt und weiter… Wieder Fehlermeldung.</p><p id="88fa06b4-28f2-4b55-95ea-9f255a0c09f1" class="">
+</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="f2512009-dc18-4c9d-b976-307c178244b3" class="code"><code class="language-CSS">syslog installation
+
+Mar  8 21:32:21 main-menu[480]: (process:7494): mount: mounting none on /sys/firmware/efi/efivars failed: Device or resource busy
+Mar  8 21:32:21 main-menu[480]: (process:7494):   Error reading device /dev/sda at 0 length 512.
+Mar  8 21:32:21 main-menu[480]: (process:7494):   
+Mar  8 21:32:21 main-menu[480]: (process:7494): Error reading device /dev/sda at 0 length 4096.
+Mar  8 21:32:21 main-menu[480]: (process:7494): mount: mounting none on /sys/firmware/efi/efivars failed: Device or resource busy
+Mar  8 21:32:21 main-menu[480]: (process:7494): mount: mounting none on /sys/firmware/efi/efivars failed: Device or resource busy
+Mar  8 21:32:21 main-menu[480]: (process:7494):   Error reading device /dev/sda at 0 length 512.
+Mar  8 21:32:21 main-menu[480]: (process:7494):   Error reading device /dev/sda at 0 length 4096.
+Mar  8 21:32:21 main-menu[480]: (process:7494):   Error reading device /dev/sda at 0 length 512.
+Mar  8 21:32:21 main-menu[480]: (process:7494):   Error reading device /dev/sda at 0 length 4096.
+Mar  8 21:32:21 main-menu[480]: (process:7494): mount: mounting none on /sys/firmware/efi/efivars failed: Device or resource busy</code></pre><p id="5fbc1431-b655-432a-8476-c529fc34dbf4" class="">Ich vermutete, dass die Ursache möglicherweise in einer vorherigen BIOS-Installation von Windows lag, während der Debian-Installer eine Installation via UEFI bevorzugte.</p><p id="e363c563-ae86-499e-a63f-25e496edb8b0" class="">Um dieses Dilemma zu lösen, nutzte ich einen separaten USB-Stick mit Gparted, um die Festplatte vollständig zu formatieren. Trotz des vollständigen Formatierens bestanden die Probleme weiterhin, was darauf hindeutete, dass die SSD möglicherweise durch Reste der alten Windows-Installation beschädigt war.</p><p id="b66dd72c-e6f0-40e0-a678-7c068508c9e4" class="">Durch weitere Recherchen entdeckte ich, dass SSDs in einen Wiederherstellungsmodus wechseln können, wenn sie etwa 30 Minuten lang mit Strom versorgt werden, ohne Daten zu übertragen. Um dies zu erreichen, verband ich die SSD lediglich mit dem Stromkabel und liess sie für einige Zeit unberührt. Anschliessend formatierte ich sie erneut, diesmal mit dem GPT-Schema.</p><p id="1cd6ddde-91e6-47ad-8f51-fb0e4a4cce1f" class="">Nach dieser Prozedur verlief die Installation erfolgreich.</p><h3 id="a3025f17-5739-4071-9c86-b49b1fc1ed0f" class="">Bootprobleme</h3><p id="36c16601-5c10-4119-b93d-fd8458ea7fd6" class="">Nach einer schnellen Erstkonfiguration des Laptops führte ich einen Neustart durch, aber merkwürdigerweise bootete das Gerät danach nicht mehr ordnungsgemäss. Obwohl Debian im Boot-Menü als Option angezeigt wurde, geschah nichts, wenn ich es auswählte. Ich vermutete, dass es ein Problem mit dem GRUB-Bootloader geben könnte, da er nicht zu starten schien. Interessanterweise startete das System jedoch korrekt, als ich einen Live-Boot-USB-Stick verwendete, um Zugang zu erhalten. Diese Situation war für mich ziemlich rätselhaft, also wiederholte ich den Vorgang mehrmals. Letztendlich konnte ich das Problem durch einige Anpassungen im BIOS beheben.</p><p id="53e0591b-6e04-4c7e-8e5e-826afa0d8b20" class="">
+</p><h2 id="7ff23e9a-e750-4f94-90b0-c941021a1eaa" class="">2. Hardware Upgrade</h2><p id="648b94fa-ab83-4a53-a2c3-806b53b8c040" class="">Angesichts des Alters des Laptops und der gestiegenen Anforderungen der heutigen Zeit entschied ich mich, ihm ein Hardware-Upgrade zu spendieren. Ich wählte eine <a href="https://www.digitec.ch/de/s1/product/samsung-870-evo-500-gb-25-ssd-14597794?supplier=406802">500 GB Samsung 870EVO SSD</a> und zwei <a href="https://www.digitec.ch/de/s1/product/gskill-ripjaws-2-x-8gb-1866-mhz-ddr3-ram-so-dimm-ram-15685275?supplier=406802">8-GB-RAM-Module mit 1866 MHz von G.Skill</a> aus.</p><p id="7f3dab6b-f074-4c78-93ec-bca70d8d2cc0" class="">Die Installation verläuft erstaunlich unkompliziert.</p><div id="11525912-c5ae-4a5d-bb16-e6d7977bd5e2" class="column-list"><div id="6fee877a-dfb9-4e80-9208-e5b45ac8d65c" style="width:43.75%" class="column"><figure id="13153679-6b6e-4e44-979d-27e8ef881a1d" class="image"><a href="ThinkPad%20x220%2089781bc9a52c40d89aca82e9ad9cdb76/WhatsApp_Image_2024-03-26_at_3.20.30_PM.jpeg"><img style="width:624px" src="ThinkPad%20x220%2089781bc9a52c40d89aca82e9ad9cdb76/WhatsApp_Image_2024-03-26_at_3.20.30_PM.jpeg"/></a><figcaption>SSD Replacement</figcaption></figure></div><div id="362060ce-0fbe-44fd-ae7d-5b7bab19423e" style="width:56.25%" class="column"><figure id="80e35563-8840-4280-9ece-2f3700beec22" class="image"><a href="ThinkPad%20x220%2089781bc9a52c40d89aca82e9ad9cdb76/ram-replace_-_Kopie.jpg"><img style="width:624px" src="ThinkPad%20x220%2089781bc9a52c40d89aca82e9ad9cdb76/ram-replace_-_Kopie.jpg"/></a><figcaption>RAM-Replace</figcaption></figure></div></div><p id="32e356f9-71c8-4f78-863d-d11b5d0cd33e" class="">
+</p><h2 id="c71429fc-8902-4fff-81b3-06c3a15b8286" class="">3. BIOS/UEFI-Firmware durch Coreboot ersetzen</h2><div id="9819e609-81fe-45f4-bbaa-de5f3bf50c3f" class="column-list"><div id="15195e1f-c583-49b9-9e2c-560178f1eb1d" style="width:81.25%" class="column"><p id="958c1ec5-0264-426d-8118-dc9ccf941fdd" class="">Um die volle Leistung der RAM-Sticks mit 1866 MHz ausnutzen zu können, ist eine Modifikation des BIOS erforderlich. Obwohl es im Internet vorkonfigurierte, modifizierte BIOS-Versionen gibt, bevorzuge ich einen vorsichtigeren Ansatz. Daher entscheide ich mich für die Installation von Coreboot, einer Open-Source-Firmware, die eine flexible und sichere Alternative zum herkömmlichen BIOS oder UEFI bietet. Coreboot ermöglicht es, den Bootprozess zu beschleunigen und die Kontrolle über die Hardware zu erhöhen, indem unnötige Funktionen entfernt und die Sicherheit verbessert werden, was auch das Risiko von Backdoors minimiert.</p><p id="ea0de9ad-42f8-46f1-b6fd-9c320268630f" class="">Die Aussicht, eine eigene BIOS-Firmware zu verwenden, begeistert mich sehr, da es das Gerät noch persönlicher und vollständig unter meiner Kontrolle macht. Ausserdem finde ich erhoffe ich mir noch viel mehr über die Hardware von Computern und wie sie funktionieren zu lernen.</p><p id="3483eb8d-cd29-49cc-b5ad-923bdb71fab7" class="">Bei meinen Recherchen stelle ich jedoch fest, dass mir die notwendige Hardware zur Installation von Coreboot fehlt. Ohne zu zögern, bestelle ich die erforderlichen Komponenten online und nutze die Wartezeit, um mein Wissen über Coreboot und dessen Implementierung zu vertiefen.</p><p id="b8db7d33-2a19-4162-b656-bfce64e56025" class="">
+</p></div><div id="fb30e76a-3417-499c-bf15-ee893ef290d5" style="width:18.749999999999996%" class="column"><figure id="91f35c90-7876-4388-ac91-fa51e04ac233" class="image"><a href="ThinkPad%20x220%2089781bc9a52c40d89aca82e9ad9cdb76/Untitled%203.png"><img style="width:336px" src="ThinkPad%20x220%2089781bc9a52c40d89aca82e9ad9cdb76/Untitled%203.png"/></a><figcaption><strong>TZT CH341A 24 25 Serie EEPROM-Flash-BIOS-USB Programmierer Modul</strong></figcaption></figure></div></div><p id="d1be4e8c-047b-4318-bb86-96ad10e562ba" class="">Abwarten und Tee trinken... </p><p id="653dd3e2-49ff-4dee-8067-06172a043973" class="">
+</p><p id="0729cab3-6812-469d-bd87-25c19eba8411" class="">
+</p><p id="445c1d31-78d9-4701-9991-9ae8e43d0771" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

@@ -1,106 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - AM</title>
-    <link rel="stylesheet" href="https://kristopolous.github.io/BOOTSTRA.386/v2.3.1/assets/css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - AM</title>
+  <link rel="stylesheet" href="https://kristopolous.github.io/BOOTSTRA.386/v2.3.1/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
 
-    <div id="sidebar-placeholder"></div>
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      fetch('sidebar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('sidebar-placeholder').innerHTML = data;
-        });
-    });
-    </script>
+
 </head>
+
 <body>
-    <div class="content">
-        <div class="hero-unit">
-            <h1>Projects</h1>
-            <p>Hier finden Sie eine Sammlung meiner Arbeiten – von ersten Entwürfen bis hin zu laufenden Projekten, inklusive Einblicken in das, was noch geplant ist.</p>
-            <p>Hier finden Sie einen Einblick in meine laufenden und geplanten Projekte, auch jene, die sich noch in der Entwicklung oder in der Planungsphase befinden.</p>
-            <p><a href="#" class="btn btn-primary btn-large">Learn more</a></p>
-          </div>
-    
-          <!-- Example row of columns -->
-          <div class="row">
-            <div class="span4">
-              <img src="images/ram-replace.jpg" alt="Thinkpad Refurbish" style="width:100%;">
-              <h2>ThinkPad x220 Refurbish</h2>
-              <p>Ein mal ThinkPad X220 fürs Jahr 2024 bitte!<br> Ziel ist es, das originale BIOS durch Coreboot zu ersetzen, um mehr Kontrolle über die Hardware zu erlangen und die Leistung durch Speicher-Flash-Modifikationen zu optimieren.</p>
-              <p><a class="btn" href="#">View details</a></p>
-            </div>
-            <div class="span4">
-              <img src="images/freebsd-pfsense-berkeley-software-distribution-operating-systems-firewall-linux-7ef641c4b04013c7ad5e2db613ad8d1b.png" alt="FreeBSD" style="width:100%;">
-              <h2>Raspberry Pi Ad-Blocker</h2>
-              <p>Mit einem Raspberry Pi möchte ich Pi-Hole durch Unbound DNS auf FreeBSD ersetzen. Dieses Projekt dient hauptsächlich dazu, meine Kenntnisse in FreeBSD, DNS sowie DHCP zu erweitern. </p>
-              <p><a class="btn" href="#">View details</a></p>
-           </div>
-            <div class="span4">
-              <img src="images/webpage-thumb.png" alt="Hello World!" style="width:100%;">
-              <h2>Personal Homepage</h2>
-              <p>Meine Homepage ist eine Spielwiese zum Erlernen von HTML und CSS, die mir als Plattform dient, um meine Projekte und Fähigkeiten zu präsentieren. Es ist ein fortlaufendes Projekt, das mir erlaubt, mein Webentwicklungs-Know-how praktisch anzuwenden und zu vertiefen.</p>
-              <p><a class="btn" href="#">View details</a></p>
-            </div>
-          </div>
+  <div class="sidebar">
+    <ul class="nav nav-list">
+      <li class="nav-header">Navigation</li>
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="projects.html">Projects</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="hero-unit">
+      <h1>Projects</h1>
+      <p>Hier finden Sie einen Einblick in meine laufenden und geplanten Projekte, auch jene, die sich noch in der
+        Entwicklung oder in der Planungsphase befinden.</p>
+    </div>
 
-          <div class="row">
-            <div class="span4">
-              <img src="images/Java-Logo.png" alt="Java" style="width:100%;">
-              <h2>Bestellsyste für Verein</h2>
-              <p>Kleines Bestellsystem für Vereinsküche. Bestellungen via Android-Tablet mit Abholnummer, welche entweder direkt über API oder über eine DB an einen Raspberry Pi gesendet wird. (in Planung)</p>
-              <p><a class="btn" href="#">View details</a></p>
-            </div>
-            <div class="span4">
-              <img src="images/bash-logo.png" alt="Bash" style="width:100%;">
-              <h2>Bash-Script</h2>
-              <p>Automatisiertes initalisieren von Debian .config Files. Für ein müheloses aufsetzen von neuen Geräten</p>
-              <p><a class="btn" href="#">View details</a></p>
-           </div>
-            <div class="span4">
-              <img src="images/webpage-thumb.png" alt="Hello World!" style="width:100%;">
-              <h2>Personal Homepage</h2>
-              <p>Meine Homepage ist eine Spielwiese zum Erlernen von HTML und CSS, die mir als Plattform dient, um meine Projekte und Fähigkeiten zu präsentieren. Es ist ein fortlaufendes Projekt, das mir erlaubt, mein Webentwicklungs-Know-how praktisch anzuwenden und zu vertiefen.</p>
-              <p><a class="btn" href="#">View details</a></p>
-            </div>
-          </div>
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="span4">
+        <img src="images/ram-replace - Kopie.jpg" alt="Thinkpad Refurbish" class="img-responsive" style="width:100%;">
+        <h2>ThinkPad x220 Refurbish</h2>
+        <p>Ein mal ThinkPad X220 fürs Jahr 2024 bitte!<br> Ziel ist es, das originale BIOS durch Coreboot zu ersetzen,
+          um mehr Kontrolle über die Hardware zu erlangen und die Leistung durch Speicher-Flash-Modifikationen zu
+          optimieren.</p>
+        <p><a class="btn" href="thinkpad.html">View details</a></p>
+      </div>
+      <div class="span4">
+        <img
+          src="images/freebsd-pfsense-berkeley-software-distribution-operating-systems-firewall-linux-7ef641c4b04013c7ad5e2db613ad8d1b.png"
+          alt="FreeBSD" class="img-responsive" style="width:100%;">
+        <h2>FreeBSD als DNS/DHCP</h2>
+        <p>Mit einem Raspberry Pi möchte ich Pi-Hole durch Unbound DNS auf FreeBSD ersetzen. Dieses Projekt dient
+          hauptsächlich dazu, meine Kenntnisse in FreeBSD, DNS sowie DHCP zu erweitern. </p>
+        <p><a class="btn" href="freebsd.html">View details</a></p>
+      </div>
+      <div class="span4">
+        <img src="images/webpage-thumb.png" alt="Hello World!" class="img-responsive" style="width:100%;">
+        <h2>Personal Homepage</h2>
+        <p>Meine Homepage ist eine Spielwiese zum Erlernen von HTML und CSS, die mir als Plattform dient, um meine
+          Projekte und Fähigkeiten zu präsentieren. Es ist ein fortlaufendes Projekt, das mir erlaubt, mein
+          Webentwicklungs-Know-how praktisch anzuwenden und zu vertiefen.</p>
+        <p><a class="btn" href="https://github.com/GoniMcColly/personal-webpage">View details</a></p>
+      </div>
+      <div class="span4">
+        <img src="images/Java-Logo.png" alt="Java" class="img-responsive" style="width:100%;">
+        <h2>Bestellsystem für Verein<br>(in Planung)</h2>
+        <p>Kleines Bestellsystem für Vereinsküche. Bestellungen via Android-Tablet mit Abholnummer, welche entweder
+          direkt über API oder über eine DB an einen Raspberry Pi gesendet wird. (in Planung)</p>
+        <p><a class="btn" href="#">View details</a></p>
+      </div>
+      <div class="span4">
+        <img src="images/bash-logo.png" alt="Bash" class="img-responsive" style="width:100%;">
+        <h2>Bash-Script / .config</h2>
+        <p>Cleaning up.. coming soon..</p>
+        <p><a class="btn" href="https://github.com/GoniMcColly/dotfiles">View details</a>
+      </div>
+      <div class="span4">
+        <img src="images/github-mark-white.png" alt="Git" class="img-responsive" style="width:100%;">
+        <h2>GitHub Profil</h2>
+        <p>Wird fortlaufend aktualisiert.</p>
+        <p><a class="btn" href="https://github.com/GoniMcColly">View details</a>
+      </div>
+    </div>
 
-    
+
+
+    <!--
         <div id="myCarousel" class="carousel slide">
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
-            <!-- Carousel items -->
+            <!-- Carousel items 
             <div class="carousel-inner">
               <div class="active item" img src="images/carusel1.jpg">…</div>
               <div class="item">…</div>
               <div class="item">…</div>
             </div>
-            <!-- Carousel nav -->
+            <!-- Carousel nav --
             <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
             <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
           </div>
-        <!-- Additional content here -->
-        
-        <footer>
-            <div class="btn-group" >
-                <a class="btn" href="https://github.com/GoniMcColly" target="_blank">GitHub</a>
-                <a class="btn" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-                <a class="btn" href="mailto:agron@makol.li" target="_blank">Mail: agron@makol.li</a>
-            </div>
-        </footer>
-    </div>
+        -->
+    <!-- Additional content here -->
 
-    <!-- Bootstrap JS and its dependencies for Bootstrap components to work properly -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://kristopolous.github.io/BOOTSTRA.386/v2.3.1/assets/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+    <footer>
+      <div class="btn-group">
+        <a class="btn" href="https://github.com/GoniMcColly" target="_blank">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <a class="btn" href="mailto:agron@makol.li" target="_blank">Mail: agron@makol.li</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Bootstrap JS and its dependencies for Bootstrap components to work properly -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://kristopolous.github.io/BOOTSTRA.386/v2.3.1/assets/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
