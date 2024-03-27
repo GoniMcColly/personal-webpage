@@ -25,45 +25,35 @@ body {
 
 .hero-unit h1 {
     font-size: 48px;
-    /* Größere Schrift */
 }
 
 .hero-unit p {
     text-align: center;
-    /* Zentrierter Text */
     font-size: 24px;
-    /* Optional: Größere Schrift für den Paragraph */
 }
 
 .hero-unit {
     text-align: center;
-    /* Zentriert den Inhalt der .hero-unit */
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    /* Fügt Abstand zwischen den Elementen hinzu */
 }
 
 .span4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* Verteilt den Platz gleichmäßig */
 }
 
 .span4 img {
     width: 100%;
-    /* Stellt sicher, dass die Bilder responsiv sind */
     height: 270px;
-    /* Setzt eine feste Höhe für alle Bilder */
     object-fit: cover;
-    /* Sorgt dafür, dass die Bilder ihre Proportionen beibehalten */
 }
 
 .span4 h2 {
     margin: 20px 0;
-    /* Fügt oberen und unteren Rand hinzu */
 }
